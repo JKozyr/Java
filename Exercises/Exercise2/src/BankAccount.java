@@ -20,14 +20,14 @@ public class BankAccount {
             balance += amount;
 
             System.out.println("You Deposit " + amount + " $");
-            System.out.println("Current balance: " + balance + " $\n\n\n");
+            System.out.println("Current balance: " + Math.round(balance * 100.0) / 100.0 + " $\n\n");
         }
     }
 
     void withdraw(double amount) {
         if(amount > balance) {
             System.out.println("Sorry, you can't withdraw " + amount + " $");
-            System.out.println("Current balance is: " + balance + " $\n\n\n");
+            System.out.println("Current balance is: " + Math.round(balance * 100.0) / 100.0 + " $\n\n");
         }
         if(amount <= 0){
             System.out.println("Sorry, you can't withdraw negative amount");
@@ -39,7 +39,7 @@ public class BankAccount {
             balance -= amount;
 
             System.out.println("You withdraw " + amount + " $");
-            System.out.println("Current balance: " + balance + " $\n\n\n");
+            System.out.println("Current balance: " + Math.round(balance * 100.0) / 100.0 + " $\n\n");
 
 
             if (balance < 100) {
@@ -51,7 +51,7 @@ public class BankAccount {
     void displayBalance() {
         System.out.println(accountNumber);
         System.out.println(accountHolder);
-        System.out.println("Current balance: " + balance + " $\n\n\n");
+        System.out.println("Current balance: " + Math.round(balance * 100.0) / 100.0 + " $\n\n");
 
     }
 }
