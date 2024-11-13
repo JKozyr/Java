@@ -27,13 +27,13 @@ public class Student {
         }
         avrageGrade = avrageGrade / grades.length;
         if(avrageGrade > 4.75){
-            System.out.println("Exelent your avrage grade is: " + avrageGrade);
+            System.out.println("Exelent your avrage grade is: " + Math.round(avrageGrade * 100.0) / 100.0));
         }
         else if(avrageGrade > 3.75){
-            System.out.println("Good your avrage grade is: " + avrageGrade);
+            System.out.println("Good your avrage grade is: " + Math.round(avrageGrade * 100.0) / 100.0));
         }
         else{
-            System.out.println("Needs improvement! your avrage grade is: " + avrageGrade);
+            System.out.println("Needs improvement! your avrage grade is: " + Math.round(avrageGrade * 100.0) / 100.0));
         }
         System.out.println("\n\n===========================================================\n\n");
     }
